@@ -48,8 +48,10 @@
             <string>/* obj_env - Stores room conditions */
 
 /* Defaults - change in Creation Code */
-env_gravity = 1;
-env_bgm     = bgm_HappyAccident;
+env_gravity    = 1;
+env_bgm        = bgm_HappyAccident;
+env_procedural = false; 
+env_yvel       = 0;
 
 /* Set first step alarm */
 alarm[0] = 1;

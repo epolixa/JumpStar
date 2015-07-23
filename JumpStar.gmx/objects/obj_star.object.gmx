@@ -418,7 +418,9 @@ if (xvel != 0 &amp;&amp; facing != sign(xvel)) facing = sign(xvel);
 
 /* move */
 x += xvel;
-y += yvel; distance -= yvel;
+if (Env.env_procedural) Env.env_yvel = yvel;
+else y += yvel;
+distance -= yvel;
 
 </string>
           </argument>

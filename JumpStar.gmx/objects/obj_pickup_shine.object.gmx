@@ -72,6 +72,93 @@ image_index = random(5);
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>Instances</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Env = instance_nearest(x, y, obj_env);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Procedural Movement</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/* Procedural Mode Vertical Movement */
+
+// based off player movement calculations, 
+// affects tiles instead of player when room is procedural
+
+if (Env.env_procedural) y -= Env.env_yvel;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>Pickup</string>
           </argument>
         </arguments>
