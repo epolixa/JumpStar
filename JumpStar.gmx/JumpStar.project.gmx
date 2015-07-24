@@ -22,6 +22,7 @@
       <sprite>sprites\sprite3</sprite>
     </sprites>
     <sprite>sprites\spr_env</sprite>
+    <sprite>sprites\spr_proc</sprite>
     <sprite>sprites\spr_gui</sprite>
     <sprites name="Pickup">
       <sprite>sprites\spr_pickup_shine</sprite>
@@ -32,7 +33,6 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
   </fonts>
@@ -47,6 +47,7 @@
       <object>objects\obj_pickup_shine</object>
     </objects>
     <object>objects\obj_gui</object>
+    <object>objects\obj_proc</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_load</room>

@@ -228,17 +228,24 @@ in_pause = keyboard_check_pressed(vk_escape);
 
 if (!paused) 
 {
+    draw_set_font(fnt_default);
+
     /* shine score */
     if (in_shootingstar || Star.show_shine[0]-- &gt; 0)
     {
         draw_set_valign(fa_middle);
         draw_set_colour(c_white);
-        draw_set_font(fnt_default);
         draw_text(Star.x + abs(Star.sprite_width), Star.y, string(Star.shine));
         
         /* reset */
         draw_set_valign(fa_top);
     }
+    
+    /* distance */
+    draw_set_valign(fa_bottom);
+    draw_set_halign(fa_center);
+    draw_set_colour(col_darkgrape);
+    draw_text(Star.x, Star.y + abs(Star.sprite_height), string(floor(Star.distance)));
 }
 </string>
           </argument>
